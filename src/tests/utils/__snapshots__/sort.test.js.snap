@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sortByHighestRating 1`] = `
+Array [
+  Object {
+    "author": "Tatyana Olson",
+    "body": "How bitter a thing it is to look into happiness through another man's eyes!",
+    "id": "9784620626604",
+    "publish_date": "2016-09-03T23:25:47.642545Z",
+    "rating": 4.1,
+  },
+  Object {
+    "author": "Fay Lemke",
+    "body": "Can one desire too much of a good thing?.",
+    "id": "9793364045824",
+    "publish_date": "2016-09-04T23:25:47.642388Z",
+    "rating": 3.2,
+  },
+  Object {
+    "author": "Brett Gutmann",
+    "body": "For ever and a day.",
+    "id": "9790650579209",
+    "publish_date": "2016-09-02T23:25:47.642587Z",
+    "rating": 1.6,
+  },
+  Object {
+    "author": "Kaley Schiller",
+    "body": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+    "id": "9783221620868",
+    "publish_date": "2016-09-05T23:25:47.642350Z",
+    "rating": 0.8,
+  },
+]
+`;
+
+exports[`sortByLowestRating 1`] = `
+Array [
+  Object {
+    "author": "Kaley Schiller",
+    "body": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+    "id": "9783221620868",
+    "publish_date": "2016-09-05T23:25:47.642350Z",
+    "rating": 0.8,
+  },
+  Object {
+    "author": "Brett Gutmann",
+    "body": "For ever and a day.",
+    "id": "9790650579209",
+    "publish_date": "2016-09-02T23:25:47.642587Z",
+    "rating": 1.6,
+  },
+  Object {
+    "author": "Fay Lemke",
+    "body": "Can one desire too much of a good thing?.",
+    "id": "9793364045824",
+    "publish_date": "2016-09-04T23:25:47.642388Z",
+    "rating": 3.2,
+  },
+  Object {
+    "author": "Tatyana Olson",
+    "body": "How bitter a thing it is to look into happiness through another man's eyes!",
+    "id": "9784620626604",
+    "publish_date": "2016-09-03T23:25:47.642545Z",
+    "rating": 4.1,
+  },
+]
+`;
+
+exports[`sortByNewestReviews 1`] = `
+Array [
+  Object {
+    "author": "Kaley Schiller",
+    "body": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+    "id": "9783221620868",
+    "publish_date": "2016-09-05T23:25:47.642350Z",
+    "rating": 0.8,
+  },
+  Object {
+    "author": "Fay Lemke",
+    "body": "Can one desire too much of a good thing?.",
+    "id": "9793364045824",
+    "publish_date": "2016-09-04T23:25:47.642388Z",
+    "rating": 3.2,
+  },
+  Object {
+    "author": "Tatyana Olson",
+    "body": "How bitter a thing it is to look into happiness through another man's eyes!",
+    "id": "9784620626604",
+    "publish_date": "2016-09-03T23:25:47.642545Z",
+    "rating": 4.1,
+  },
+  Object {
+    "author": "Brett Gutmann",
+    "body": "For ever and a day.",
+    "id": "9790650579209",
+    "publish_date": "2016-09-02T23:25:47.642587Z",
+    "rating": 1.6,
+  },
+]
+`;
+
+exports[`sortByOldestReviews 1`] = `
+Array [
+  Object {
+    "author": "Brett Gutmann",
+    "body": "For ever and a day.",
+    "id": "9790650579209",
+    "publish_date": "2016-09-02T23:25:47.642587Z",
+    "rating": 1.6,
+  },
+  Object {
+    "author": "Tatyana Olson",
+    "body": "How bitter a thing it is to look into happiness through another man's eyes!",
+    "id": "9784620626604",
+    "publish_date": "2016-09-03T23:25:47.642545Z",
+    "rating": 4.1,
+  },
+  Object {
+    "author": "Fay Lemke",
+    "body": "Can one desire too much of a good thing?.",
+    "id": "9793364045824",
+    "publish_date": "2016-09-04T23:25:47.642388Z",
+    "rating": 3.2,
+  },
+  Object {
+    "author": "Kaley Schiller",
+    "body": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+    "id": "9783221620868",
+    "publish_date": "2016-09-05T23:25:47.642350Z",
+    "rating": 0.8,
+  },
+]
+`;

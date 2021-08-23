@@ -13,6 +13,7 @@ import {
   sortByNewestReviews,
   sortByOldestReviews,
 } from '../../utils/sort';
+import ErrorBoundary from '../../components/ErrorBoundary';
 
 const Reviews = () => {
   const [reviews, setReviews] = useState(null);
@@ -38,63 +39,71 @@ const Reviews = () => {
   };
 
   return (
-    <div className="container-fluid">
-      <div className="d-flex justify-content-end">
-        <DropdownButton
-          variant="secondary"
-          title="Sort by"
-          className="mt-2 mb-4"
-        >
-          <Dropdown.Item onClick={() => onClickSelection(sortByHighestRating)}>
-            Highest rating
-          </Dropdown.Item>
-          <Dropdown.Item onClick={() => onClickSelection(sortByLowestRating)}>
-            Lowest rating
-          </Dropdown.Item>
-          <Dropdown.Item onClick={() => onClickSelection(sortByNewestReviews)}>
-            Newest review
-          </Dropdown.Item>
-          <Dropdown.Item onClick={() => onClickSelection(sortByOldestReviews)}>
-            Oldest review
-          </Dropdown.Item>
-        </DropdownButton>
+    <ErrorBoundary>
+      <div className="container-fluid">
+        <div className="d-flex justify-content-end">
+          <DropdownButton
+            variant="secondary"
+            title="Sort by"
+            className="mt-2 mb-4"
+          >
+            <Dropdown.Item
+              onClick={() => onClickSelection(sortByHighestRating)}
+            >
+              Highest rating
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => onClickSelection(sortByLowestRating)}>
+              Lowest rating
+            </Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => onClickSelection(sortByNewestReviews)}
+            >
+              Newest review
+            </Dropdown.Item>
+            <Dropdown.Item
+              onClick={() => onClickSelection(sortByOldestReviews)}
+            >
+              Oldest review
+            </Dropdown.Item>
+          </DropdownButton>
+        </div>
+        <Row xs={1} md={2} lg={3} xl={4} className="g-4">
+          {reviews.map((r) => {
+            const date = new Date(r.publish_date);
+            return (
+              <Col key={r.id}>
+                <Card>
+                  <Card.Header as="h5" className="align-items-center">
+                    {r.rating}
+                    {'  '}
+                    <StarRatings
+                      rating={r.rating}
+                      starDimension="16px"
+                      starSpacing="2px"
+                    />
+                  </Card.Header>
+                  <Card.Body>
+                    <Card.Title>{r.author}</Card.Title>
+                    <Card.Text>
+                      {r.body.length > 30
+                        ? `${r.body.substring(0, 30)}...`
+                        : r.body}
+                    </Card.Text>
+                    <Card.Link href={`/reviews/${r.id}`}>Read more</Card.Link>
+                  </Card.Body>
+                  <Card.Footer>
+                    <small className="text-muted">
+                      Published on {date.toLocaleDateString()}{' '}
+                      {date.toLocaleTimeString()}
+                    </small>
+                  </Card.Footer>
+                </Card>
+              </Col>
+            );
+          })}
+        </Row>
       </div>
-      <Row xs={1} md={2} lg={3} xl={4} className="g-4">
-        {reviews.map((r) => {
-          const date = new Date(r.publish_date);
-          return (
-            <Col key={r.id}>
-              <Card>
-                <Card.Header as="h5" className="align-items-center">
-                  {r.rating}
-                  {'  '}
-                  <StarRatings
-                    rating={r.rating}
-                    starDimension="16px"
-                    starSpacing="2px"
-                  />
-                </Card.Header>
-                <Card.Body>
-                  <Card.Title>{r.author}</Card.Title>
-                  <Card.Text>
-                    {r.body.length > 30
-                      ? `${r.body.substring(0, 30)}...`
-                      : r.body}
-                  </Card.Text>
-                  <Card.Link href={`/reviews/${r.id}`}>Read more</Card.Link>
-                </Card.Body>
-                <Card.Footer>
-                  <small className="text-muted">
-                    Published on {date.toLocaleDateString()}{' '}
-                    {date.toLocaleTimeString()}
-                  </small>
-                </Card.Footer>
-              </Card>
-            </Col>
-          );
-        })}
-      </Row>
-    </div>
+    </ErrorBoundary>
   );
 };
 
