@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import StarRatings from 'react-star-ratings';
 import { getReviews } from '../../api/reviews';
+import CardSkeleton from '../../components/CardSkeleton';
 
 const Reviews = () => {
   const [reviews, setReviews] = useState(null);
@@ -17,7 +18,13 @@ const Reviews = () => {
   }, []);
 
   if (!reviews) {
-    return <div className="container-fluid">Loading...</div>;
+    return (
+      <div className="container-fluid">
+        <Row xs={1} md={2} lg={3} xl={4} className="g-4">
+          <CardSkeleton />
+        </Row>
+      </div>
+    );
   }
 
   if (reviews.length === 0) {

@@ -3,6 +3,7 @@ const REVIEWS_URL = 'https://shakespeare.podium.com/api/reviews';
 const getReviewsRequest = () =>
   fetch(REVIEWS_URL, {
     method: 'GET',
+    cache: 'default',
     headers: {
       'x-api-key': 'H3TM28wjL8R4#HTnqk?c',
       Accept: 'application/json',
@@ -13,6 +14,7 @@ const getReviewsRequest = () =>
 const getReviewByIdRequest = (id) =>
   fetch(`${REVIEWS_URL}/${id}`, {
     method: 'GET',
+    cache: 'default',
     headers: {
       'x-api-key': 'H3TM28wjL8R4#HTnqk?c',
       Accept: 'application/json',

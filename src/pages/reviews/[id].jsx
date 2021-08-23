@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import StarRatings from 'react-star-ratings';
 import { getReviewById } from '../../api/reviews';
+import ReviewSkeleton from '../../components/ReviewSkeleton';
 
 const Review = () => {
   const [review, setReview] = useState(null);
@@ -19,7 +20,11 @@ const Review = () => {
   }, [router]);
 
   if (!review) {
-    return <div className="container-fluid">Loading...</div>;
+    return (
+      <div className="container-fluid">
+        <ReviewSkeleton />
+      </div>
+    );
   }
   const date = new Date(review.publish_date);
 
