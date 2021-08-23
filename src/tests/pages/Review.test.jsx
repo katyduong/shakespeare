@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
 import * as nextRouter from 'next/router';
-import Review from '../pages/reviews/[id]';
-import { singleReview } from './testData';
-import * as reviewsAPI from '../api/reviews';
+import Review from '../../pages/reviews/[id]';
+import { singleReview } from '../testData';
+import * as reviewsAPI from '../../api/reviews';
 
 let container;
 

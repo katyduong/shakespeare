@@ -1,0 +1,858 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders CardSkeleton 1`] = `
+Array [
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="col"
+  >
+    <div
+      className="card"
+    >
+      <h5
+        className="align-items-center card-header"
+      >
+        <span>
+          <span
+            className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+            style={Object {}}
+          >
+            ‌
+          </span>
+        </span>
+      </h5>
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+           
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </div>
+        <p
+          className="card-text"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </p>
+      </div>
+      <div
+        className="card-footer"
+      >
+        <small
+          className="text-muted"
+        >
+          <span>
+            <span
+              className="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+              style={Object {}}
+            >
+              ‌
+            </span>
+          </span>
+        </small>
+      </div>
+    </div>
+  </div>,
+]
+`;

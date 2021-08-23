@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { act } from 'react-dom/test-utils';
-import Reviews from '../pages/reviews/index';
-import { reviewsData } from './testData';
+import Reviews from '../../pages/reviews/index';
+import { reviewsData } from '../testData';
 
 let container;
 

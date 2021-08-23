@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Main from '../pages/index';
+import Main from '../../pages/index';
 
 test('renders Reviews for Shakespeare text', () => {
   render(<Main />);
