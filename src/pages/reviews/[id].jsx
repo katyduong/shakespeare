@@ -27,7 +27,7 @@ const Review = () => {
     <div className="container-fluid">
       <div className="jumbotron p-3 p-md-5 rounded">
         <div className="px-0">
-          <h1 className="display-4 font-italic">
+          <h1 className="display-4">
             {review.rating}
             {'  '}
             <StarRatings
@@ -36,7 +36,7 @@ const Review = () => {
               starSpacing="2px"
             />
           </h1>
-          <p className="blog-post-meta font-italic">
+          <p>
             {date.toLocaleDateString()} {date.toLocaleTimeString()} by{' '}
             {review.author}
           </p>

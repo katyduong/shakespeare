@@ -30,8 +30,8 @@ const Reviews = () => {
         {reviews.map((r) => {
           const date = new Date(r.publish_date);
           return (
-            <Col>
-              <Card key={r.id}>
+            <Col key={r.id}>
+              <Card>
                 <Card.Header as="h5" className="align-items-center">
                   {r.rating}
                   {'  '}
