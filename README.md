@@ -33,6 +33,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+### `npm run start`
+
+Runs next start which starts a Next.js production server. Needs to run script `build` first before `start`.
+
 ### `npm run lint`
 
 Runs next lint which sets up Next.js' built-in ESLint configuration
