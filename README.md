@@ -1,4 +1,4 @@
-# Getting Started
+# About
 
 Client side app for Shakespeare's API that shows reviews and reviews by id for Shakespeare's plays.
 

@@ -1,7 +1,6 @@
 const REVIEWS_URL = 'https://shakespeare.podium.com/api/reviews';
 
 const getReviewsRequest = () =>
-  // eslint-disable-next-line no-undef
   fetch(REVIEWS_URL, {
     method: 'GET',
     headers: {
@@ -12,7 +11,6 @@ const getReviewsRequest = () =>
   });
 
 const getReviewByIdRequest = (id) =>
-  // eslint-disable-next-line no-undef
   fetch(`${REVIEWS_URL}/${id}`, {
     method: 'GET',
     headers: {
