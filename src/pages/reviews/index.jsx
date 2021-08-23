@@ -2,9 +2,17 @@ import React, { useState, useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown';
 import StarRatings from 'react-star-ratings';
 import { getReviews } from '../../api/reviews';
 import CardSkeleton from '../../components/CardSkeleton';
+import {
+  sortByHighestRating,
+  sortByLowestRating,
+  sortByNewestReviews,
+  sortByOldestReviews,
+} from '../../utils/sort';
 
 const Reviews = () => {
   const [reviews, setReviews] = useState(null);
@@ -18,21 +26,39 @@ const Reviews = () => {
   }, []);
 
   if (!reviews) {
-    return (
-      <div className="container-fluid">
-        <Row xs={1} md={2} lg={3} xl={4} className="g-4">
-          <CardSkeleton />
-        </Row>
-      </div>
-    );
+    return <CardSkeleton />;
   }
 
   if (reviews.length === 0) {
     return <div className="container-fluid">No Reviews Available</div>;
   }
+  const onClickSelection = (sortBy) => {
+    const r = [].concat(reviews.sort(sortBy));
+    setReviews(r);
+  };
 
   return (
     <div className="container-fluid">
+      <div className="d-flex justify-content-end">
+        <DropdownButton
+          variant="secondary"
+          title="Sort by"
+          className="mt-2 mb-4"
+        >
+          <Dropdown.Item onClick={() => onClickSelection(sortByHighestRating)}>
+            Highest rating
+          </Dropdown.Item>
+          <Dropdown.Item onClick={() => onClickSelection(sortByLowestRating)}>
+            Lowest rating
+          </Dropdown.Item>
+          <Dropdown.Item onClick={() => onClickSelection(sortByNewestReviews)}>
+            Newest review
+          </Dropdown.Item>
+          <Dropdown.Item onClick={() => onClickSelection(sortByOldestReviews)}>
+            Oldest review
+          </Dropdown.Item>
+        </DropdownButton>
+      </div>
       <Row xs={1} md={2} lg={3} xl={4} className="g-4">
         {reviews.map((r) => {
           const date = new Date(r.publish_date);

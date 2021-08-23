@@ -1,5 +1,6 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Skeleton from 'react-loading-skeleton';
 
@@ -31,7 +32,16 @@ const CardSkeleton = () => {
       </Col>
     );
   }
-  return repeatingSkeleton;
+  return (
+    <div className="container-fluid">
+      <div className="d-flex justify-content-end">
+        <Skeleton className="my-4" width={90} />
+      </div>
+      <Row xs={1} md={2} lg={3} xl={4} className="g-4">
+        {repeatingSkeleton}
+      </Row>
+    </div>
+  );
 };
 
 export default CardSkeleton;
