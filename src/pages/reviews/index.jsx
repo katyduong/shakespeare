@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import StarRatings from 'react-star-ratings';
 import { getReviews } from '../../api/reviews';
 
 const Reviews = () => {
@@ -14,30 +17,51 @@ const Reviews = () => {
   }, []);
 
   if (!reviews) {
-    return <>Loading...</>;
+    return <div className="container-fluid">Loading...</div>;
   }
 
   if (reviews.length === 0) {
-    return <>No Reviews</>;
+    return <div className="container-fluid">No Reviews Available</div>;
   }
 
   return (
-    <ul>
-      {reviews.map((r) => {
-        return (
-          <li key={r.id}>
-            <Link
-              href={{
-                pathname: `/reviews/${r.id}`,
-                query: { id: r.id },
-              }}
-            >
-              <a>{r.rating} review on date {r.publish_date}</a>
-            </Link>
-          </li>
-        );
-      })}
-    </ul>
+    <div className="container-fluid">
+      <Row xs={1} md={2} lg={3} xl={4} className="g-4">
+        {reviews.map((r) => {
+          const date = new Date(r.publish_date);
+          return (
+            <Col>
+              <Card key={r.id}>
+                <Card.Header as="h5" className="align-items-center">
+                  {r.rating}
+                  {'  '}
+                  <StarRatings
+                    rating={r.rating}
+                    starDimension="16px"
+                    starSpacing="2px"
+                  />
+                </Card.Header>
+                <Card.Body>
+                  <Card.Title>{r.author}</Card.Title>
+                  <Card.Text>
+                    {r.body.length > 30
+                      ? `${r.body.substring(0, 30)}...`
+                      : r.body}
+                  </Card.Text>
+                  <Card.Link href={`/reviews/${r.id}`}>Read more</Card.Link>
+                </Card.Body>
+                <Card.Footer>
+                  <small className="text-muted">
+                    Published on {date.toLocaleDateString()}{' '}
+                    {date.toLocaleTimeString()}
+                  </small>
+                </Card.Footer>
+              </Card>
+            </Col>
+          );
+        })}
+      </Row>
+    </div>
   );
 };
 

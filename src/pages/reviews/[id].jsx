@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import StarRatings from 'react-star-ratings';
 import { getReviewById } from '../../api/reviews';
 
 const Review = () => {
@@ -18,14 +19,31 @@ const Review = () => {
   }, [router]);
 
   if (!review) {
-    return <>Loading...</>;
+    return <div className="container-fluid">Loading...</div>;
   }
+  const date = new Date(review.publish_date);
+
   return (
-    <>
-      <h1>{review.rating}</h1>
-      <p>{review.body}</p>
-			<p>{review.author}</p>
-    </>
+    <div className="container-fluid">
+      <div className="jumbotron p-3 p-md-5 rounded">
+        <div className="px-0">
+          <h1 className="display-4 font-italic">
+            {review.rating}
+            {'  '}
+            <StarRatings
+              rating={review.rating}
+              starDimension="40px"
+              starSpacing="2px"
+            />
+          </h1>
+          <p className="blog-post-meta font-italic">
+            {date.toLocaleDateString()} {date.toLocaleTimeString()} by{' '}
+            {review.author}
+          </p>
+          <p className="lead my-3">{review.body}</p>
+        </div>
+      </div>
+    </div>
   );
 };
 
